@@ -8,6 +8,9 @@ source ~/.kubectl
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+#make the history unique
+export HISTCONTROL=ignoredups
+
 #alias vim="/usr/local/Cellar/vim/7.4.1864/bin/vim"
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias ga="git add ."
