@@ -68,12 +68,12 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
 inoremap <C-c> <C-o>:call NERDComment(0,"toggle")<C-m>
 nnoremap <C-c> :call NERDComment(1,"toggle")<CR><ESC>
 vnoremap <C-c> :call NERDComment(0,"toggle")<CR><v>
 
 "Base64 decode/encode shortcuts
-vnoremap <leader>64d c<c-r>=system('base64 --decode', @")<cr><esc>
-vnoremap <leader>64e c<c-r>=system('openssl base64 -e', @")<cr><esc>
+vnoremap <leader>64d c<c-r>=system('base64 --decode', @")<esc>
+vnoremap <leader>64e c<c-r>=system('openssl base64 -e -A', @")<esc>
 "vnoremap <leader>64e c<c-r>=system('base64 -w0', @")<cr><esc>
-
